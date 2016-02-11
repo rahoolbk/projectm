@@ -1,0 +1,43 @@
+
+<div id="tooplate_top_bar">
+        <a class="social_btn twitter">&nbsp;</a>
+        <a class="social_btn facebook">&nbsp;</a>
+    </div>
+
+
+
+
+<div id="tooplate_header">
+        <div id="site_title"><h1><a href="#">Iron Rush</a></h1></div>
+        <div id="tooplate_menu">
+            <ul>
+                <li><a href="index.html" class="current">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>       
+        </div> <!-- end of tooplate_menu -->
+    </div>
+
+    <script type="text/javascript">
+$(window).load(function() {
+    $('#slider').nivoSlider({
+        effect:'random',
+        slices:15,
+        animSpeed:500,
+        pauseTime:3000,
+        startSlide:0, //Set starting Slide (0 index)
+        directionNav:false,
+        directionNavHide:false, //Only show on hover
+        controlNav:false, //1,2,3...
+        controlNavThumbs:false, //Use thumbnails for Control Nav
+        pauseOnHover:true, //Stop animation while hovering
+        manualAdvance:false, //Force manual transitions
+        captionOpacity:0.8, //Universal caption opacity
+        beforeChange: function(){},
+        afterChange: function(){},
+        slideshowEnd: function(){} //Triggers after all slides have been shown
+    });
+});
+</script>

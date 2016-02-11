@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projectm</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="tooplate_body_wrapper">
+<div id="tooplate_wrapper">
+	
+<%= render 'layouts/header'%>
+
+<%=yield%>
+    <div class="cleaner"></div>
+</div> <!-- end of forever wrapper -->
+</div>
+<%= render 'layouts/footer'%>
+</body>
+
+</html>
